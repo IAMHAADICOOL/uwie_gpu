@@ -37,4 +37,4 @@ if __name__ == '__main__':
 
             # Save the output image
             img = cp.asnumpy(img)
-            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_RGHS.jpg'), img)
+            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_RGHS_gpu.jpg'), img)

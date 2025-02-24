@@ -30,4 +30,4 @@ if __name__ == '__main__':
 
             # Convert back to NumPy and save the output image
             sceneRadiance = cp.asnumpy(sceneRadiance)
-            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_GC.jpg'), sceneRadiance)
+            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_GC_gpu.jpg'), sceneRadiance)

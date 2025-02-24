@@ -40,4 +40,4 @@ if __name__ == '__main__':
 
             # Convert back to NumPy for saving
             sceneRadiance = cp.asnumpy(sceneRadiance)
-            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_ICM.jpg'), sceneRadiance)
+            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_ICM_gpu.jpg'), sceneRadiance)
