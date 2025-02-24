@@ -1,3 +1,5 @@
-Create a folder named 'InputImages' and 'OutputImages' inside the root dataset directory
+Create a dataset directory. Inside the directory, create two subdirectories, named as 'InputImages' and 'OutputImages'
 
-Update the path inside each ALGO_NAME_gpu folder, inside the main.py file
+Paste all the images inside the InputImages directory
+
+Update the path inside each ALGO_NAME_gpu folder, inside the main.py file, update the 'folder' variable inside the main.py file so that it points to the root dataset directory
