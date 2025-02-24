@@ -8,7 +8,7 @@ from global_stretching_RGB import stretching
 from relativeglobalhistogramstretching import RelativeGHstretching
 
 if __name__ == '__main__':
-    folder = "C:/Users/Administrator/Desktop/Databases/Dataset"
+    folder = "/home/haadi/Single-Underwater-Image-Enhancement-and-Color-Restoration/images_iIT_MADRAS"
     path = os.path.join(folder, "InputImages")
     files = os.listdir(path)
     files = natsort.natsorted(files)
@@ -37,4 +37,4 @@ if __name__ == '__main__':
 
             # Save the output image
             img = cp.asnumpy(img)
-            cv2.imwrite(os.path.join('OutputImages', f'{prefix}_RGHS.jpg'), img)
+            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_RGHS.jpg'), img)

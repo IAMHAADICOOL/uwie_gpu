@@ -8,7 +8,7 @@ from skimage import exposure
 from sceneRadianceGC import RecoverGC
 
 if __name__ == '__main__':
-    folder = "C:/Users/Administrator/Desktop/UnderwaterImageEnhancement/NonPhysical/GC"
+    folder = "/home/haadi/Single-Underwater-Image-Enhancement-and-Color-Restoration/images_iIT_MADRAS"
     path = os.path.join(folder, "InputImages")
     files = os.listdir(path)
     files = natsort.natsorted(files)
@@ -30,4 +30,4 @@ if __name__ == '__main__':
 
             # Convert back to NumPy and save the output image
             sceneRadiance = cp.asnumpy(sceneRadiance)
-            cv2.imwrite(os.path.join('OutputImages', f'{prefix}_GC.jpg'), sceneRadiance)
+            cv2.imwrite(os.path.join(folder, 'OutputImages', f'{prefix}_GC.jpg'), sceneRadiance)
